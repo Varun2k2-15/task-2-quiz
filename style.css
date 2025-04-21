@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  .quiz-box {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .option-btn {
+    background: #f3f3f3;
+    color: #333;
+    border: 2px solid transparent;
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+  }
+  
+  #nextBtn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  #nextBtn:hover {
+    background: #5b3c91;
+  }
+  
+  #scoreBox {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
